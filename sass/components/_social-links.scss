@@ -1,0 +1,43 @@
+/* иконки блока команда */
+.social-icon-set {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-icon-set__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-bcg-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+  }
+
+  &:hover .social-icon-set__svg,
+  &:focus .social-icon-set__svg {
+    fill: var(--primary-white-color);
+  }
+}
+
+.social-icon-set__svg {
+  fill: var(--icon-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}

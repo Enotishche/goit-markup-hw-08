@@ -1,0 +1,139 @@
+.mobile-menu {
+  position: fixed;
+
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100vh;
+  padding: 48px 40px;
+  transition: 0.5s;
+
+  background-color: var(--primary-white-color);
+
+  &.is-open {
+    left: 0;
+  }
+}
+
+.is-open .mobile-menu-button {
+  display: none;
+}
+
+.mobile-menu-button {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;
+
+  width: 27px;
+  height: 22px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-menu-button .mobile-menu-button__icon--close {
+  display: none;
+}
+
+.mobile-menu-button.is-open .mobile-menu-button__icon--close {
+  display: block;
+}
+
+.mobile-menu-button.is-open .mobile-menu-button__icon--open {
+  display: none;
+}
+
+.mobile-menu-button:focus .mobile-menu-button__icon--open,
+.mobile-menu-button:focus .mobile-menu-button__icon--close {
+  fill: var(--accent-text-color);
+}
+
+.mobile-menu__item {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  &:last-child {
+    padding-bottom: 200px;
+  }
+
+  @media screen and (min-width: 480px) and (min-height: 760px) {
+    font-size: 40px;
+
+    &:last-child {
+      padding-bottom: 306px;
+    }
+  }
+
+  color: var(--primary-text-color);
+
+  &:not(:last-child) {
+    padding-bottom: 32px;
+  }
+}
+
+.mobile-menu__link--current {
+  color: var(--accent-text-color);
+}
+
+.mobile-menu__contacts {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-menu__contacts--tel {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-text-color);
+
+  padding-bottom: 32px;
+
+  @media screen and (min-width: 480px) and (min-height: 760px) {
+    font-size: 34px;
+  }
+}
+
+.mobile-menu__contacts--email {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-color);
+
+  padding-bottom: 64px;
+  @media screen and (min-width: 480px) and (min-height: 760px) {
+    font-size: 24px;
+  }
+}
+
+.mobile-menu-socials__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-menu-socials__item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: 480px) and (min-height: 760px) {
+    font-size: 18px;
+  }
+}
+
+.mobile-menu-socials__link {
+  color: var(--accent-text-color);
+}

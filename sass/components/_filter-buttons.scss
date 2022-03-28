@@ -1,0 +1,57 @@
+.filter--margin {
+  margin-bottom: 50px;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    display: flex;
+    font-weight: nowrap;
+    justify-content: center;
+  }
+}
+
+.filter__btn {
+  background-color: var(--button-floor-color);
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  margin-bottom: 15px;
+
+  border-radius: 4px;
+  border-color: transparent;
+  padding: 6px 22px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+    color: var(--primary-white-color);
+    box-shadow: var(--filter-shadow);
+  }
+}

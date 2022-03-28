@@ -1,0 +1,23 @@
+.logo {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+}
+
+// .logo--padding {
+//   padding-top: 16px;
+//   padding-bottom: 16px;
+//   /* padding-top: 24px;
+//   padding-bottom: 25px; */
+// }
+
+.logo__text--color {
+  color: var(--accent-text-color);
+}
+
+/* элемент логотипа футера */
+
+.logo__text-footer--color {
+  color: var(--primary-white-color);
+}
