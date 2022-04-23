@@ -5,12 +5,15 @@
   line-height: 1.17;
 }
 
-// .logo--padding {
-//   padding-top: 16px;
-//   padding-bottom: 16px;
-//   /* padding-top: 24px;
-//   padding-bottom: 25px; */
-// }
+.logo--margin {
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+}
 
 .logo__text--color {
   color: var(--accent-text-color);

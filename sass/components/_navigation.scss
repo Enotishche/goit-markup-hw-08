@@ -14,7 +14,7 @@
     }
 
     align-items: center;
-    margin: 15px;
+    
     justify-content: space-between;
   }
 
@@ -22,6 +22,13 @@
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
   }
 }
 .nav {
@@ -38,6 +45,10 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   font-weight: 500;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
+  }
 
   &__item:not(:last-child) {
     margin-right: 50px;

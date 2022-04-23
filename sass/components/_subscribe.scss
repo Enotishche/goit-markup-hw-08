@@ -23,7 +23,11 @@
   font-size: 14px;
   line-height: 1.17;
   font-weight: 700;
-  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+  }
+  
 }
 
 .footer-form__email {

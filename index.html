@@ -15,7 +15,7 @@
     <header class="header">
       <div class="main-nav container">
          
-          <a href="./index.html" class="logo logo__mobile logo--padding link"><span class="logo__text--color">Web</span>Studio</a>
+          <a href="./index.html" class="logo logo__mobile logo--padding logo--margin link"><span class="logo__text--color">Web</span>Studio</a>
           <nav class="nav">
           <ul class="site-nav list">
              <li class="site-nav__item">
@@ -45,59 +45,66 @@
               </li>
             </ul>
             </div>
-            <button class="mobile-menu-button" data-menu-button>
-              <svg class="mobile-menu-button__icon" width="24" height="16" aria-label="переключатель мобильного меню">
-                <use class="mobile-menu-button__icon--open" href="./images/icons.svg#icon-mobile-open1"></use>
-                <use class="mobile-menu-button__icon--close" href="./images/icons.svg#icon-close-button"></use>
-              </svg>
-            </button>
+          <button class="mobile-menu-button" data-menu-button>
+            <svg class="mobile-menu-button__icon" width="24" height="16" aria-label="переключатель мобильного меню">
+              <use class="mobile-menu-button__icon--open" href="./images/icons.svg#icon-mobile-open1"></use>
+              <use class="mobile-menu-button__icon--close" href="./images/icons.svg#icon-close-button"></use>
+            </svg>
+          </button>
       </div>
+<div class="mobile-menu" data-menu>
+  <div class="mobile-menu__container">
+    <div class="mobile-menu--top">
 
+      <ul class="mobile-menu__list list">
+        <li class="mobile-menu__item ">
+          <a href="./index.html" class="link mobile-menu__link mobile-menu__link--current">Студия</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./portfolio.html" class="link mobile-menu__link ">Портфолио</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="link mobile-menu__link ">Контакты</a>
+        </li>
+      </ul>
+    </div>
+    <div class="mobile-menu--bottom">
+      <div class="mobile-menu__contacts">
+        <a href="tel:380961111111" class="mobile-menu__contacts--tel">
+          +38 096 111 11 11</a>
+        <a href="mailto:info@devstudio.com" class="mobile-menu__contacts--email">
+          info@devstudio.com</a>
+      </div>
+      <div class="mobile-menu-socials">
+        <ul class="mobile-menu-socials__list list">
+          <li class="mobile-menu-socials__item">
+            <a href="" class="mobile-menu-socials__link link">Instagram
+            </a>
+          </li>
+          <li>|</li>
+          <li class="mobile-menu-socials__item">
+            <a href="" class="mobile-menu-socials__link link">Twitter
+            </a>
+          </li>
+          <li>|</li>
+
+          <li class="mobile-menu-socials__item">
+            <a href="" class="mobile-menu-socials__link link">Facebook
+            </a>
+          </li>
+          <li>|</li>
+
+          <li class="mobile-menu-socials__item">
+            <a href="" class="mobile-menu-socials__link link">LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
     </header>
-        <div class="mobile-menu" data-menu>
-          <ul class="mobile-menu__list list">
-            <li class="mobile-menu__item ">
-              <a href="./index.html" class="link mobile-menu__link mobile-menu__link--current">Студия</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="./portfolio.html" class="link mobile-menu__link ">Портфолио</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="" class="link mobile-menu__link ">Контакты</a>
-            </li>
-          </ul>
-          <div class="mobile-menu__contacts">
-            <a href="tel:380961111111" class="mobile-menu__contacts--tel">
-              +38 096 111 11 11</a>
-            <a href="mailto:info@devstudio.com" class="mobile-menu__contacts--email">
-              info@devstudio.com</a>
-          </div>
-          <div class="mobile-menu-socials">
-            <ul class="mobile-menu-socials__list list">
-              <li class="mobile-menu-socials__item">
-                <a href="" class="mobile-menu-socials__link link" >Instagram
-                </a>
-              </li>
-              <li>|</li>
-              <li class="mobile-menu-socials__item">
-                <a href="" class="mobile-menu-socials__link link" >Twitter
-                </a>
-              </li>
-              <li>|</li>
         
-              <li class="mobile-menu-socials__item">
-                <a href="" class="mobile-menu-socials__link link" >Facebook
-                </a>
-              </li>
-              <li>|</li>
-        
-              <li class="mobile-menu-socials__item">
-                <a href="" class="mobile-menu-socials__link link" >LinkedIn
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
     <!-- основная часть -->
  <main>
       <!-- секция 1 hero -->
@@ -240,7 +247,7 @@
                 <source srcset="./images/tablet/olga.jpg    1x,
                                   ./images/tablet/olga@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
                 <source srcset="./images/mobile/olga.jpg     1x,
-                                  ./images/mobile/olga@2x.jpg 2x" media="(max-width: 767.9px)" type="image/jpeg" />
+                                  ./images/mobile/olga@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg" />
                <img src="./images/olha.jpg"  alt="Ольга Репина">
                </picture>
               <div class="team-card-footer">
@@ -294,7 +301,7 @@
                 <source srcset="./images/tablet/mikhail.jpg    1x,
                                   ./images/tablet/mikhail@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
                 <source srcset="./images/mobile/mikhail.jpg     1x,
-                                  ./images/mobile/mikhail@2x.jpg 2x" media="(max-width: 767.9px)" type="image/jpeg" />
+                                  ./images/mobile/mikhail@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg" />
                <img src="./images/mykhail.jpg" alt="Михаил Ермаков">
                </picture>
               <div class="team-card-footer">
