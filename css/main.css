@@ -473,7 +473,7 @@ p {
 
 .mobile-menu__item {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -507,32 +507,20 @@ p {
 
 .mobile-menu__contacts--tel {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--accent-text-color);
   margin-bottom: 32px;
 }
 
-@media screen and (min-width: 480px) and (min-height: 767px) {
-  .mobile-menu__contacts--tel {
-    font-size: 34px;
-  }
-}
-
 .mobile-menu__contacts--email {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1.4;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   margin-bottom: 64px;
-}
-
-@media screen and (min-width: 480px) and (min-height: 767px) {
-  .mobile-menu__contacts--email {
-    font-size: 24px;
-  }
 }
 
 .mobile-menu-socials__list {
@@ -607,10 +595,10 @@ p {
 @media (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to right, var(--gradient), var(--gradient)), url(../images/desktop/bcg.jpg);
-    background-size: 1600px 600px;
+    background-size: 1200px 400px;
     max-width: 100%;
-    height: 600px;
-    padding: 200px 0px 200px;
+    height: 400px;
+    padding: 118px 0px 118px;
   }
 }
 
@@ -769,7 +757,7 @@ p {
 .team__title,
 .clients__title {
   display: block;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   margin-bottom: 30px;
   text-align: center;
@@ -1113,7 +1101,7 @@ p {
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
   transition-property: color;
-  transition-duration: 250ms;
+  transition-duration: 50ms;
   transition-timing-function: var(--timing-function);
 }
 
