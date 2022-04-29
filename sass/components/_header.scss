@@ -2,10 +2,17 @@
   display: flex;
   background-color: var(--primary-white-color);
   border-bottom: 1px solid var(--header-border);
+  
 }
 
-@media screen and (max-width: 767px) {
-  .header {
-    justify-content: space-evenly;
-  }
+
+
+
+.header-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+  
+  
 }
